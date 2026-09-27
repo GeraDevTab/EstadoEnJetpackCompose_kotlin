@@ -20,9 +20,9 @@ fun WaterCounter(modifier: Modifier = Modifier) {
         //changes to count are now tracked by compose
         var count by remember { mutableStateOf(0) }
         Text(
-            text = "You`ve had ${count.value} glasses."
+            text = "You`ve had ${count} glasses."
         )
-        Button(onClick = { count.value++ }, Modifier.padding(top = 8.dp)) {
+        Button(onClick = { count++ }, Modifier.padding(top = 8.dp)) {
             Text("Add one")
         }
     }
